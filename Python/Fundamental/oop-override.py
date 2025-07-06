@@ -1,4 +1,4 @@
-class Manusia():
+class Manusia:
     def __init__(self, nama : str, umur : int, tinggi : int):
         self.nama = nama
         self.umur = umur

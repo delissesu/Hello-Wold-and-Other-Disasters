@@ -1,4 +1,4 @@
-class KelasInduk():
+class KelasInduk:
     def __init__(self) -> None:
         print("Inisiialisasi Kelas Induk")
 
@@ -18,7 +18,7 @@ objek = KelasTurunan()
 objek.metode()
 
 # Practice
-class Mobil():
+class Mobil:
     def __init__(self, merek : str, warna : str, kecepatan : int) -> None:
         self.merek = merek
         self.warna = warna
