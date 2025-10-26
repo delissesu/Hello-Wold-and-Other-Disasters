@@ -1,0 +1,108 @@
+<style>
+    /* Jika banyak kesamaan, bisa langsung target ke elemennya saja */
+    /* Contohnya ini, dan dinamakan dengan selector. Selector yang lebih spesifik akan mempunyai prioritas yang lebih tinggi. */
+    p {
+        font-family: Helvetica;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .video-title {
+        /* Jenis font */
+        font-weight: bold;
+        font-size: 18px;
+        width: 300px;
+
+        margin-bottom: 5px;
+
+        /* Jarak tinggi text */
+        line-height: 20px;
+    }
+
+    /* Misalnya ini, seelctor ini lebih spesifik daripada paragraph itu sendiri. */
+    .video-stats {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+
+        /* Paragraph with default come with margin and paragraph */
+        /* margin-top: 0; */
+        margin-bottom: 20px;
+    }
+
+    .video-author {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+
+        /* margin-top: 0; */
+        margin-bottom: 20px;
+    }
+
+    .desc-video {
+        font-size: 14px;
+        
+        width: 280px;
+        color: rgb(96, 96, 96);
+        line-height: 22px;
+        /* margin-top: 0; */
+        margin-bottom: 100px;
+    }
+
+    .apple-footer {
+        margin-bottom: 50px;
+        font-size: 14px;
+        background-color: rgb(227, 65, 64);
+        color: white;
+
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        /* text-decoration: underline; */
+    }
+
+    .span-example {
+        color: green;
+        margin-left: 12px;
+    }
+
+    .span-example:hover {
+        text-decoration: underline;
+    }
+
+    .shop-link {
+        cursor: pointer;
+    }
+
+    .shop-link:hover {
+        text-decoration: underline;
+
+    }
+
+
+</style>
+
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class="video-stats">
+    <!-- Use HTML entity for symbol or something -->
+    21.2M views &#183; 5 months ago
+</p>
+
+<p class="video-author">
+    Naveria Works &#10003;
+</p>
+
+<p class="desc-video">
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+
+<p class="apple-footer">
+    Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &#62;</span>
+</p>
+
+<p>
+    <!-- Practice to use tect elemeny -->
+    Shop early for the <strong>best selection</strong> of holiday favourites. <span class="span-example">Shop now.</span>
+</p>
