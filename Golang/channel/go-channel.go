@@ -13,3 +13,15 @@ By default, sends and receives block until the other side is ready. This allows 
 */
 
 package main
+
+import "fmt"
+
+type Person struct {}
+
+func main() {
+    // Cara inisiasi channel dengan menggunakan built in function make
+    // c:=make(chan int)
+    // Hasil kembalian dari channel adalah sebuah address
+    c := make(chan Person) // Tiped atanya juga bisa menggunakan struct
+    fmt.Println(c) 
+}
