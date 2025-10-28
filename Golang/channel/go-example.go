@@ -1,27 +1,27 @@
-package main
+// package main
 
-import (
-    "fmt"
-    "time"
-)
+// import (
+//     "fmt"
+//     "time"
+// )
 
-func foo() {
-    for i := 0; i < 5; i++ {
-        fmt.Println("foo:", i)
-        time.Sleep(100 * time.Millisecond)
-    }
-}
+// func foo() {
+//     for i := 0; i < 5; i++ {
+//         fmt.Println("foo:", i)
+//         time.Sleep(100 * time.Millisecond)
+//     }
+// }
 
-func bar() {
-    for i := 0; i < 5; i++ {
-        fmt.Println("bar:", i)
-        time.Sleep(200 * time.Millisecond)
-    }
-}
+// func bar() {
+//     for i := 0; i < 5; i++ {
+//         fmt.Println("bar:", i)
+//         time.Sleep(200 * time.Millisecond)
+//     }
+// }
 
-func run() {
-    go foo() // Memulai goroutine untuk fungsi foo
-    bar()    // Memanggil fungsi bar secara normal
+// func run() {
+//     go foo() // Memulai goroutine untuk fungsi foo
+//     bar()    // Memanggil fungsi bar secara normal
 
-    time.Sleep(1000 * time.Millisecond) // Menunggu goroutines selesai
-}
+//     time.Sleep(1000 * time.Millisecond) // Menunggu goroutines selesai
+// }
