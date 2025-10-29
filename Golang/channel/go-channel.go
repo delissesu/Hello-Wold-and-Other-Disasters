@@ -30,7 +30,7 @@
 
 // func main() {
 // 	// Call run
-// 	run()
+// 	// run()
 
 // 	// Cara inisiasi channel dengan menggunakan built in function make
 // 	// c:=make(chan int)

@@ -19,7 +19,7 @@
 //     }
 // }
 
-// func run() {
+// func main() {
 //     go foo() // Memulai goroutine untuk fungsi foo
 //     bar()    // Memanggil fungsi bar secara normal
 
