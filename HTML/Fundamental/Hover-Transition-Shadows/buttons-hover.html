@@ -15,7 +15,7 @@
 
     /* Use pseudo class :hover */
     .subscribe-button:hover {
-        opacity: 0.8;
+        opacity: 0.8; /* opacity value is 0 until 1 */
     }
 
     /* Use pseudo class :active */
@@ -66,6 +66,15 @@
     }
 
     .tweet-button:hover {
+        /*
+        
+        first value is for x (horizontal),
+        second value is for y (vertical),
+        third value is for blur,
+        and the last is for shadow color
+
+        rgba mean have opacty for last parameter
+        )*/
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     }
 
