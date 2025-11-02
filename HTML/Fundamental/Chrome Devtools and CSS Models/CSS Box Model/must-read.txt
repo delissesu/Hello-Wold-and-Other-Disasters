@@ -1,0 +1,6 @@
+1. spacing in the outside of the elemnt is called margin.
+2. spacing in the inside of the element or button (arround text) is called padding.
+
+So, CSS box model is:
+1. How much space an elements take up.
+2. How far it is away from other elements.
