@@ -32,5 +32,13 @@ const server = http.createServer((request, response) => {
 
     else {
         // Handle 404 : URL ga ketemu
+        response.writeHead(404, {"content-type": "text/html"});
+        response.end(
+            `
+            <h1>404 : Halaman Tidak Ditemukan</h1>
+            <p><strong>${URL}</strong>tidak ditemukan di server ini.</p>
+            <a href="/">Kembali ke halaman utama</a>
+            `
+        );
     }
 })
