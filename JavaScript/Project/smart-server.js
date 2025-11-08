@@ -10,4 +10,27 @@ const server = http.createServer((request, response) => {
 
     // Logging
     console.log(`Request => ${METHOD} : ${URL}`);
+
+    // Routing : Kasih respons berdasarkan URL
+    if (URL === '/' && METHOD === 'GET') {
+
+        // API Endpoint : Kasih data JSON
+        response.writeHead(200, {"content-type" : "application/json"});
+
+        response.end(JSON.stringify(
+            {
+                message: "Halo, ini aku dari API",
+                data: {
+                    nama: "Delissesu",
+                    status: "Server belajar",
+                    versi: "1.0",
+                    hari: 2
+                }
+            }
+        ));
+    }
+
+    else {
+        // Handle 404 : URL ga ketemu
+    }
 })
