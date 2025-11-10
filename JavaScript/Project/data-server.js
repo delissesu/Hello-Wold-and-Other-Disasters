@@ -1,10 +1,8 @@
 // Hari 3: "Data Handler" - Processing Request Data & POST Handling
 
 const http = require('http');
-const { url } = require('inspector');
 const querystring = require('querystring');
 const { URLSearchParams } = require('url');
-const { brotliDecompress } = require('zlib');
 
 const server = http.createServer((request, response) => {
     const { url, method } = request;
@@ -15,29 +13,47 @@ const server = http.createServer((request, response) => {
     if (method === 'GET' && url.includes('/search')) {
 
         // Ekstrak query parameter dari URL
-        const queryString = url.split('?');
+        const queryString = url.split('?')[1];
 
         // Logging
         console.log(queryString);
         console.log(queryString[0]);
         console.log(queryString[1]);
         
-        const searchParameter = [[queryString, 'value'], [keyword, category]];
-        new URLSearchParams(searchParameter);
+        // const searchParameter = [[queryString, 'value'], [keyword, category]];
+        // new URLSearchParams(searchParameter);
 
-        const keyword = searchParameter.get('q') || 'tidak ada keyword';
-        const category = searchParameter.get('category') || 'all';
+        if (queryString) {
+            const searchParameter = new URLSearchParams(queryString);
+            const keyword = searchParameter.get('q') || 'tidak ada keyword';
+            const category = searchParameter.get('category') || 'all';
 
-        response.writeHead(200, { "content-type" : "text/html" });
-        response.end(
-            `
-            <h1>Hasil Pencarian</h1>
-            <p>Keyword: <strong>${keyword}</strong></p>
-            <p>Category: <strong>${category}</strong></p>
-            <br>
-            <a href="/">Kembali ke menu utama</a>
-            `
-        );
+            response.writeHead(200, { "content-type" : "text/html" });
+            response.end(
+                `
+                <h1>Hasil Pencarian</h1>
+                <p>Keyword: <strong>${keyword}</strong></p>
+                <p>Category: <strong>${category}</strong></p>
+                <br>
+                <a href="/">Kembali ke menu utama</a>
+                `
+            );
+        } 
+        else {
+            response.writeHead(400, {"content-type" : "text/html"});
+            response.end(
+                `
+                <h1>
+                    400 : Bad Request
+                </h1>
+
+                <p>
+                    Query parameter tidak ditemukan.
+                </p>
+                `
+            )
+        }
+
     }
 
     // Handle POST request : form submission
