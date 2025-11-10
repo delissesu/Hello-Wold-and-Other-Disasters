@@ -23,7 +23,7 @@ const server = http.createServer((request, response) => {
         // const searchParameter = [[queryString, 'value'], [keyword, category]];
         // new URLSearchParams(searchParameter);
 
-        if (queryString) {
+        if (queryString && queryString.trim() !== '') {
             const searchParameter = new URLSearchParams(queryString);
             const keyword = searchParameter.get('q') || 'tidak ada keyword';
             const category = searchParameter.get('category') || 'all';
