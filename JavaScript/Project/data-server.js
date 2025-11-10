@@ -16,7 +16,14 @@ const server = http.createServer((request, response) => {
 
         // Ekstrak query parameter dari URL
         const queryString = url.split('?');
-        const searchParameter = new URLSearchParams(queryString);
+
+        // Logging
+        console.log(queryString);
+        console.log(queryString[0]);
+        console.log(queryString[1]);
+        
+        const searchParameter = [[queryString, 'value'], [keyword, category]];
+        new URLSearchParams(searchParameter);
 
         const keyword = searchParameter.get('q') || 'tidak ada keyword';
         const category = searchParameter.get('category') || 'all';
@@ -36,14 +43,24 @@ const server = http.createServer((request, response) => {
     // Handle POST request : form submission
     else if (method === 'POST' && url === '/login') {
         let body = '';
+        /*
+        - Request adalah event emitter (bisa emit events)
+        - Jadi, perlu sesuatu yang listen ke eventnya
+        */
 
         // Accept data yang dikirim client (chunk by chunk)
+        // Listen channel data : kirim data
         request.on('data', chunk => {
-                body += chunk.toString();
+            // Logging
+            console.log(`Cek chunk: ${chunk} dan Cek body ${body}`);
+            body += chunk.toString();
         })
 
-        // Semua data sudah diterima
-        request.on('end', () => {
+        // Semua data sudah diterima : data sudah selesai dikirim
+        request.on('end', () => { // Listen channel end
+            // Logging
+            console.log(`Cek body di request end ${body}`)
+
             // Parse form data
             const parsedBody = querystring.parse(body);
             const username = parsedBody.username || 'tidak diisi';
