@@ -79,6 +79,15 @@ const server = http.createServer((request, response) => {
 
             // Parse form data
             const parsedBody = querystring.parse(body);
+
+            /*
+            - Parsebody isinya object, pasangan key value
+            - Contoh: parsedBody = { username: 'budi', password: '123' }
+            - Jadi, untuk akses value, cukup call key dari variabelnya.
+            - const username = parsedBody.username; -> budi
+            - const password = parsedBody.password; -> 123
+            */
+
             const username = parsedBody.username || 'tidak diisi';
             const password = parsedBody.password || 'tidak diisi'; 
 
