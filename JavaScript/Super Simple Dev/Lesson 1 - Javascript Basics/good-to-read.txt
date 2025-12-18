@@ -1,0 +1,14 @@
+Basics Of Javascript:
+- Giving instructions to a computer (code)
+- The computer follows our instructions (running the code)
+
+Syntax:
+- Rules that we have to follow when use a programming language
+- Similiar to English (grammar)
+- In programming, we have to follow the rules of syntax exactly
+
+First Lesson Conclusion:
+- Javascript is giving instructions to a computer
+- Wrote Javascript code
+- Run our code using the console
+- Syntax
