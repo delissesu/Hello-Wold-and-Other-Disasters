@@ -1,0 +1,12 @@
+- Javascript have order of operations like this
+/ * are done first
++ - are done after
+In Javascript, this thing can be called as operator precedence
+
+- Simply, KABATAKU rule.
+/ * have same priority, it work from left ro right,
+same with
++ - have same priority, it work from left to right
+
+- NB:
+If want to operate base on what you want, use bracket (,,,)
