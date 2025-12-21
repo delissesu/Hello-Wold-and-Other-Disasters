@@ -7,9 +7,13 @@ But computer have a problem while working with floats.
 
 While calculating using float, sometimes the result maybe can be inaccurate. Because computer only can store 0 and 1. This problem is not only in Javascript, but in many different programming language have the same problem too.
 
-Computer can store (=> 0, 1) 0 and 1, but human can count number from 0 >= number >= 9 (0, 1, 2, ..., 9)
+Computer can store (=> 0, 1) 0 and 1, but human can count number from 0 >= number >= 9 (0, 1, 2, ..., 9). In this case, seem like have a problem in number system.
 
+For integers, that is not a problem, but with float or decimal numbers, the computer cannot store binary number properly. The inaccuraccies have problem in some floating number, in this case cannot reach the float number properly.
 
+While calculating money, we must avoid the innacurate calculation.
+How to avoid the problem in best practice when calculating money is calculate in cents instead of dollars.
 
-
-1. Weird behaviour of number in Javascript
+So, because calculation with floats are sometimes inaccurate, when working with money:
+1. Do the calculation in cents
+2. Convert back to dollars
