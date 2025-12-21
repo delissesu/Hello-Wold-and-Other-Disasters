@@ -1,0 +1,15 @@
+This note is about more details about math and number in Javascript:
+
+In programming:
+2, 3, 4 = integers
+2.2, 2.5 = floating point numbers (floats)
+But computer have a problem while working with floats.
+
+While calculating using float, sometimes the result maybe can be inaccurate. Because computer only can store 0 and 1. This problem is not only in Javascript, but in many different programming language have the same problem too.
+
+Computer can store (=> 0, 1) 0 and 1, but human can count number from 0 >= number >= 9 (0, 1, 2, ..., 9)
+
+
+
+
+1. Weird behaviour of number in Javascript
