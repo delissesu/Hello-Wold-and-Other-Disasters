@@ -1,0 +1,6 @@
+// Make a converter temperature from celsius to farenheit
+/*
+The formula is
+Farenheit = (Celcius * 9/5) * 32)
+Celsius = (Farenheit - 32) * 5/9
+*/
