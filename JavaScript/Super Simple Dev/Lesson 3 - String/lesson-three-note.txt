@@ -10,3 +10,6 @@
 - Javascript have 3 ways to make string, i can use double quote, single quote, or use backtick
 - Backtick in Javascript is template string can use for interpolation
 - If i use interpolation, the code when i insert a value in a string can be more cleaner
+- Backtick can also useed for multiple line
+
+- Only use interpolation if i want to insert a value in a string
