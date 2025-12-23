@@ -1,0 +1,12 @@
+- String is text
+- String and number can get concat (bisa digabungin gitu deh), contoh: "Delion" + 21 = Delion21
+- Concate result is always be string
+- Character can have 3 meaning like:
+1. Letter lik e, b. c
+2. Number like 1, 2, 3
+3. Symbol *. @, &
+4. Escape character \',\", \n\
+
+- Javascript have 3 ways to make string, i can use double quote, single quote, or use backtick
+- Backtick in Javascript is template string can use for interpolation
+- If i use interpolation, the code when i insert a value in a string can be more cleaner
