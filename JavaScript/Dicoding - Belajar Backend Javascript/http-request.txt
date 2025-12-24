@@ -1,1 +1,8 @@
+// Request untuk mendapatkan daftar kopi
 curl -X GET https://coffee-api.dicoding.dev/coffees -i
+
+// Request membeli kopi
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Kopi Tubruk\"}" https://coffee-api.dicoding.dev/transactions -i
+
+// Membeli Kopi
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Kopi Luwak\"}" https://coffee-api.dicoding.dev/transactions -i
