@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4I</title>
+
+    <style>
+        .yellow-button {
+            background-color: yellow;
+        }
+
+        .orange-button {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Yea, slicing to recalling -->
+    <!-- I must create 2 paragraph and 2 buttons (add style in button
+    yellow and orange) -->
+
+    <!-- Paragraph 1 -->
+    <p>
+        Adults Plain Cotton T-shirt
+    </p>
+
+    <!-- Paragraph 2 -->
+    <p>
+        Price: $7.99
+    </p>
+
+    <!-- Button 1 -->
+    <button class="yellow-button" onclick="alert('Added')">
+        Add to cart
+    </button>
+    
+    <!-- Button 2 -->
+    <button class="orange-button" onclick="alert('Purchased')">
+        Buy now
+    </button>
+
+    <script>
+        const buyNowButton = document.querySelector('.orange-button');
+
+        buyNowButton.addEventListener('click', () => {
+            console.log('Loading...');
+        });
+    </script>
+</body>
+
+</html>
