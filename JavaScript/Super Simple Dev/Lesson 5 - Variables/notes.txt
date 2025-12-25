@@ -1,0 +1,15 @@
+- Variable is like a container, can contain a value
+
+- How variable work:
+1. Create a variable name:
+- Cant use special words, example: let
+- Cant start with a number, example; 2number
+- Cant use special character like symbol, example: ^saa
+
+- Semicolon is mark to end of code or instruction
+
+- Naming convention:
+1. camelCase, myName
+2. snake_case, my_name
+3. PascalCase, like MyName
+4. kebab-case, my-name (dont work in js, cz detected like negative operation), just for html and css
