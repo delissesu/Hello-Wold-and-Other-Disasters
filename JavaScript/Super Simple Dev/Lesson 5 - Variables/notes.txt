@@ -13,3 +13,5 @@
 2. snake_case, my_name
 3. PascalCase, like MyName
 4. kebab-case, my-name (dont work in js, cz detected like negative operation), just for html and css
+
+- Best practice to use const by default and use let when i need to change the variable

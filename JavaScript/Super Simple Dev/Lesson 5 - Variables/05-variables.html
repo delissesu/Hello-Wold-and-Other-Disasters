@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        // Here, variable can contain a value
+        let var_one = 1;
+        let var_two = 2;
+        console.log(var_one + var_two);
+
+        // Variable can be able to operate with anything (in my exm, i add with number)
+        let calculation = 2 + 2;
+        console.log(calculation);
+        console.log(calculation + 5);
+
+        // Variable can also get inside to another variable
+        let result = var_one + var_two + calculation;
+        console.log(result);
+
+        // Same but contain a string
+        let message = 'Hello';
+        console.log(message); console.log(result)
+
+        // Change a value of variable
+        var_one = 21;
+        // Replace result value with var one to 21
+        result = var_one + var_two + calculation;
+        console.log(result);
+
+        // Constant, cant change
+        const PI = 3.14
+        console.log(PI)
+
+        // Caused error because constant cannot be changed
+        // PI = 3.19
+
+        // To check variable type, use typeof
+        console.log(typeof(PI));console.log(typeof(message))
+    </script>
+</body>
+</html>
