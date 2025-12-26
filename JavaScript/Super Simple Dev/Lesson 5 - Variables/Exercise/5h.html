@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    
+    <p>Cart Quantity</p>
+
+    <!-- Remember to use backtick to call variable -->
+    <button onclick="console.log(`Cart Quantity: ${cart_quantity}`)">Show Quantity</button>
+    <button onclick="cart_quantity ++; console.log(`Cart Quantity: ${cart_quantity}`);">Add to cart</button>
+    <button onclick="cart_quantity += 2; console.log(`Cart Quantity: ${cart_quantity}`)">+2</button>
+    <button onclick="cart_quantity += 3; console.log(`Cart Quantity: ${cart_quantity}`)">+3</button>
+    <button onclick="cart_quantity = 0; console.log('Cart was reset.');console.log(`Cart Quantity: ${cart_quantity}`)">Reset Cart</button>
+
+    <!-- Add 2 more buttons +4 and +5 -->
+    <button onclick="cart_quantity += 4; console.log(`Cart Quantity: ${cart_quantity}`)">+4</button>
+    
+    <button onclick="cart_quantity += 5; console.log(`Cart Quantity: ${cart_quantity}`)">+5</button>
+    
+    <script>
+        let cart_quantity = 0;
+    </script>
+</body>
+</html>
